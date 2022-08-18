@@ -43,6 +43,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -171,6 +172,11 @@ nav .menu, nav .menu ul li a {
 .css:hover  {
     font-size: 50px;
     color: #264de4;
+    transition: 0.5s;
+}
+.sass:hover  {
+    font-size: 50px;
+    color: #CF649A;
     transition: 0.5s;
 }
 
