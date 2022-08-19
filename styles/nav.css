@@ -1,0 +1,59 @@
+/*CSS STYLES
+FROM NAV*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: var(--color-main-one);
+    transition: background 1.5s ease-in-out;
+    z-index: 100;
+    transition: 0,5s;
+}
+
+#menu {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 10px;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.navbar ul li a:hover {
+    color: var(--background-main);
+}
+
+nav .menu {
+    background: var(--background-main);
+}
+
+nav .menu, nav .menu ul li a {
+    color: var(--color-main-four);
+}
+
+/* MOBILE
+APPLICATION */
+#btn-mobile {
+    display: none;
+}

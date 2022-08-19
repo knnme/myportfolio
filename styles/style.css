@@ -1,0 +1,66 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@font-face {font-family: Quitars; src: url('fonts/Quitars.otf') format('opentype'); font-style: normal; font-weight: normal;
+}
+@font-face {font-family: abster; src: url('fonts/ABSTER.otf') format('opentype'); font-style: normal; font-weight: normal;
+}
+@font-face {font-family: terano; src: url('fonts/Terano.otf') format('opentype'); font-style: normal; font-weight: normal;
+}
+/*VAR 
+STYLES*/
+:root {
+    --color-main-one: #016170;
+    --color-main-two: #009393;
+    --color-main-tree: #00E0C6;
+    --color-main-four: #FFFFFF;
+
+    --background-main: #0c314b;
+    --background-fade: #031a2cbd;
+}
+/*BROWSERS*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-main-four ) var(--color-main-tree)
+}
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--color-main-one);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-main-four);
+    border-radius: 20px;
+    border: 1px solid var(--color-main-tree);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+    color: var(--color-main-four);
+}
+a {
+    text-decoration: none;
+}
+body {
+    letter-spacing: 3px;
+    background: var(--background-main);
+}
+
+/*  BG 
+COLOR TEST*/
+.home-section {
+    background: linear-gradient(to top, var(--background-fade) 20%, var(--background-main), transparent);
+}
+.main {
+    background: linear-gradient(to bottom, var(--background-fade) 20%, var(--background-main), transparent);
+}
+.contacts {
+    background: linear-gradient(to top, var(--background-fade) 10%, var(--background-main), transparent);
+}
