@@ -9,9 +9,10 @@ Esse projeto foi criano na intenção de compartilhar minhas experiencias e proj
 
 
 ## Layout web
-![Web 1](https://github.com/knnme/myportfolio/blob/main/assets/image/img/portfolio_full.png)
 
-![Web 2](https://github.com/knnme/myportfolio/blob/main/assets/image/img/portfolio_home.png)
+![Web 1](https://github.com/knnme/myportfolio/blob/main/assets/image/img/portfolio_home.png)
+
+![Web 2](https://github.com/knnme/myportfolio/blob/main/assets/image/img/portfolio_full.png)
 
 # Tecnologias utilizadas
 
