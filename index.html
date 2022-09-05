@@ -10,21 +10,17 @@
     <meta name="author" content="Kennedy Melo -+5581982569642"/>
     <link rel="shortcut icon" href="assets/image/icones/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/projects.css">
-    <link rel="stylesheet" href="/styles/contacts.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/media-querys.css">
+    <link rel="stylesheet" href="styles/sass/style.css">
     <title>Kennedy Melo</title>
 </head>
 
 <body>
     <!--header-->
     <header class="header">
-        <nav id="nav" class="navbar menu">
+        <nav id="nav" class="navbar">
+            <div class="logo">
+                <a href="#home"><img src="assets/image/img/logo.png" alt="logo"></a>
+            </div>
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="#menu" aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
@@ -34,13 +30,17 @@
                 <li><a href="#projects">PROJETOS</a></li>
                 <li><a href="#contacts">CONTATO</a></li>
             </ul>
+            <div class="navsocial">
+                <a href="https://www.linkedin.com/in/knnme/" id="linkedin" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/knnme" id="github" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
         </nav>
     </header>
-<!--Home-->
+    <!--Home-->
     <section id="home">
         <div class="home-section">
-                <h1>KENNEDY MELO</h1>
-                <h2>Front-end Developer<span>|</span></h2>
+            <h1>KENNEDY MELO</h1>
+            <h2>Front-end Developer</h2>
             <div class="skills">
                 <i class='bx bxl-html5 html' title="HTML"></i>
                 <i class='bx bxl-css3 css' title="CSS"></i>
@@ -49,10 +49,10 @@
             </div>
             <div class="bottons">
                 <div class="bottom-linkedin">
-                <a href="https://www.linkedin.com/in/knnme/" class="btn linkedin" target="_blank">linkedin</a>
+                <a href="https://www.linkedin.com/in/knnme/" class="btn linkedin" target="_blank">Linkedin</a>
                 </div>
                 <div class="bottom-cv">
-                <a href="assets/kennedymelo_cv.pdf" class="btn btn1" download> Download CV</a>
+                <a href="assets/kennedymelo_cv.pdf" class="btn cv" download> Download CV</a>
                 </div>
                 <div class="bottom-git">
                 <a href="https://github.com/knnme" class="btn github" target="_blank">GitHub</a>
@@ -60,71 +60,86 @@
             </div>
         </div>
     </section>
-<!--Sobre-->
+    <!--Sobre-->
     <main class="main" id="about">
         <section class="about-section">
-            <h1>Quem é Kennedy Melo?</h1>
             <div class="about-content">
+                <h1>Quem sou eu?</h1>
                 <p>
                 Formado em Gestão em Tecnologia da Informação, sou apaixonado por tecnologia e tudo que a engloba. Tenho me aperfeiçoado em desenvoldimento Web a bastante tempo, e acredito ja estar pronto para começar a trilhar minha carreira profisssional. Sou extremamente motivado e flexível, sempre busco soluções para eventuais problemas. Sempre estou a procura de desenvoler meu conhecimento.
                 </p>
             </div>
+            <div class="about-education">
+                <div class="school">
+                    <h2>ENSINO MÉDIO</h2>
+                    <p>EREM Manoel Gonçalves de Lima </p>
+                    <p>Cumaru - PE | 2015</p>
+                </div>
+                <div class="university">
+                    <h2>FACULDADE</h2>
+                    <p>UniFavip | WYDEN - Gestão em Tecnologia da Informação </p>
+                    <p>Caruaru - PE | 2022</p>
+                </div>
+                <div class="pos">
+                    <h2>PÓS-GRADUAÇÃO</h2>
+                    <p>Universidade Estácio de Sá - Engenharia de Software </p>
+                    <p>Recife - PE | Cursando</p>
+                </div>
+            </div>
+            
         </section>
     </main>
-<!-- Projetos -->
+    <!-- Projetos -->
     <section class="projects-section" id="projects">
         <h1>Meus Projetos</h1>
         <div class="cards">
             <div class="card">
-                <div class="proj proj1">
+                <div class="card-project back">
                     <h2>EM BREVE</h2>
                     <p>Grandes projetos estão por vir! Gostaria de me dar a honra de fazer parte disso?</p>
                     <a href="#contacts">Entrar em contato</a>
                 </div>
-                <div class="proj proj2">
+                <div class="card-project front">
                     <div class="loading"></div>
-                    <div class="txt">
-                        <h2>EM BREVE</h2>
-                    </div>
+                    <h2>EM BREVE</h2>
                 </div>
             </div>
             <div class="card">
-                <div class="proj proj1">
+                <div class="card-project back">
                     <h2>EM BREVE</h2>
                     <p>Grandes projetos estão por vir! Gostaria de me dar a honra de fazer parte disso?</p>
                     <a href="#contacts">Entrar em contato</a>
                 </div>
-                <div class="proj proj2">
+                <div class="card-project front">
                     <div class="loading"></div>
-                    <div class="txt">
-                        <h2>EM BREVE</h2>
-                    </div>
+                    <h2>EM BREVE</h2>
                 </div>
             </div>
             <div class="card">
-                <div class="proj proj1">
+                <div class="card-project back">
                     <h2>EM BREVE</h2>
                     <p>Grandes projetos estão por vir! Gostaria de me dar a honra de fazer parte disso?</p>
                     <a href="#contacts">Entrar em contato</a>
                 </div>
-                <div class="proj proj2">
+                <div class="card-project front">
                     <div class="loading"></div>
-                    <div class="txt">
-                        <h2>EM BREVE</h2>
-                    </div>
+                    <h2>EM BREVE</h2>
                 </div>
             </div>
         </div>
     </section>
-<!-- Contato-->
+    <!-- Contato-->
     <section class="contacts-section" id="contacts">
         <h2>Contato</h2>
         <div class="contacts-container">
+
+            <h3>Vamos trabalhar <br> juntos?</h3>
+
             <div class="contacts-info">
                 <div class="contacts-location">
                     <i class="bx bx-location-plus"></i>
                     <h5>Localização:</h5>
-                    <p>Recife-PE</p>
+                    <p>Recife - PE</p>
                 </div>
                 
                 <div class="contacts-mail">
@@ -140,32 +155,13 @@
                 </div>
 
             </div>
-
-            <div class="contacts-row">
-                <form action="#">
-                    <div class="contacts-nomeemail">
-                        <div class="contato-row-nome">
-                            <input type="text" name="name" placeholder="Nome">
-                        </div>
-                        <div class="contacts-row-email">
-                            <input type="text" name="mail" placeholder="E-mail">
-                        </div>
-                    </div>
-                    <div class="contacts-assuntotexto">
-                        <div class="contacts-row-assunto">
-                            <input type="text" name="subject" placeholder="Assunto">
-                        </div>
-                        <div class="contacts-row-text">
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                        </div>
-                    </div>
-                    <div class="contacts-row-btn">
-                        <button type="submit" target="_blank">Enviar mensagem</button>
-                        <span>Mensagem enviada!</span>
-                    </div>
-                </form>
-            </div>
         </div>
+
+        <div class="quote">
+            <h5>É divertido fazer o impossível, pois lá a concorrência é menor.</h5>
+            <h5>-Walt Disney.</h5>
+        </div>
+       
     </section>
 
     <section>
@@ -173,29 +169,20 @@
             <a href="https://api.whatsapp.com/send?phone=5581982569642&text=Ol%C3%A1%2C%20tudo%20bem%3F" target="_blank"> <i class='bx bxl-whatsapp'></i></a>
         </div>
     </section>
-<!--Footer-->
+    <!--Footer-->
     <footer>
         <div class="footer">
             <h2>Kennedy Melo</h2>            
             <div class="social-media">
-                <div class="social-icon">
                     <a href="https://www.linkedin.com/in/knnme/" id="linkedin" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
-                </div>
-                <div class="social-icon">
                     <a href="https://github.com/knnme" id="github" target="_blank"><i class='bx bxl-github'></i></a>
-                </div>
             </div>
-            <p id="slogan">Será um prazer te conhecer.</p>
             <div class="final">
-                <div class="copy">
-                    <p>© Copyright todos os direitos reservados </p>
-                </div>
-                <div class="credit">
-                    <p>• Desenvolvido por <span><strong>Kennedy Melo</strong></span></p>
-                </div>
+                <p>© Copyright todos os direitos reservados • Desenvolvido por <strong>Kennedy Melo.</strong></p>
             </div>
         </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

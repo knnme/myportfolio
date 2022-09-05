@@ -1,17 +1,20 @@
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
-    if (event.type === 'touchstart') event.preventDefault(); //previnir o doubleclick
+    if (event.type === 'touchstart') event.preventDefault(); // Prevenir o double click
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
     const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
+    //Area de acessibilidade 
     if (active) {
          event.currentTarget.setAttribute ('aria-label', 'Fechar Menu');
     } else {
         event.currentTarget.setAttribute ('aria-label', 'Abrir Menu');
     }
 }   
+
+
   
 
 btnMobile.addEventListener('click', toggleMenu);

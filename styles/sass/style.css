@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@font-face {
+  font-family: Quitars;
+  src: url(/fonts/Quitars.otf) format("opentype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202124;
+  background: linear-gradient(45deg, #171717, #083149, #202124, #202124);
+  background-size: 200% 200%;
+  color: #FFFFFF;
+  -webkit-animation: colors 15s ease infinite;
+          animation: colors 15s ease infinite;
+}
+@-webkit-keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+body ul {
+  list-style: none;
+}
+body h2, body h1 {
+  font-family: "Quitars";
+}
+body p, body a, body h5 {
+  font-family: "Roboto";
+}
+
+i {
+  color: #57FFDC;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  height: 4rem;
+  align-items: center;
+  background: #2f3035;
+  z-index: 100;
+  padding: 0 1.5rem;
+  box-shadow: 0rem 0rem 3rem 0rem black;
+}
+.header button {
+  display: none;
+}
+.header ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header ul li a:hover {
+  color: #57FFDC;
+}
+.header i {
+  font-size: 1.8rem;
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  padding: 8rem 0;
+  flex-direction: column;
+  text-align: center;
+}
+.home-section h1 {
+  font-size: 6rem;
+  font-family: "Quitars";
+  line-height: 1;
+  letter-spacing: 0.5rem;
+}
+.home-section h2 {
+  font-size: 1rem;
+  font-family: "Space Grotesk";
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.home-section i {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+.home-section .skills .html:hover {
+  font-size: 50px;
+  color: #f06529;
+  transition: 0.5s;
+}
+.home-section .skills .css:hover {
+  font-size: 50px;
+  color: #264de4;
+  transition: 0.5s;
+}
+.home-section .skills .sass:hover {
+  font-size: 50px;
+  color: #CF649A;
+  transition: 0.5s;
+}
+.home-section .skills .js:hover {
+  font-size: 50px;
+  color: #F0DB4F;
+  transition: 0.5s;
+}
+.home-section .bottons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Roboto";
+}
+.home-section .bottons .bottom-linkedin, .home-section .bottons .bottom-cv, .home-section .bottons .bottom-git {
+  padding: 1.5rem;
+}
+.home-section .bottons .btn {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin: auto;
+  border: 2px solid #3C4042;
+  padding: 14px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  border-radius: 0.5rem;
+}
+.home-section .bottons .btn::before {
+  width: 0%;
+  height: 100%;
+}
+.home-section .bottons .btn:hover::before {
+  width: 100%;
+}
+.home-section .bottons .btn::before {
+  background: #57FFDC;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+}
+.about-content h1 {
+  padding: 4rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about-content p {
+  padding: 0 2rem;
+}
+
+.about-education {
+  max-width: 1200px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 4rem;
+}
+.about-education h2 {
+  font-size: 1.2rem;
+  font-family: "Roboto";
+  color: #57FFDC;
+}
+.about-education p {
+  font-size: 0.8rem;
+  font-family: "Space Grotesk";
+}
+
+.school, .university, .pos {
+  padding: 1rem;
+}
+
+.projects-section {
+  max-width: 1200px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.projects-section h1 {
+  padding: 4rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects-section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects-section .cards .card {
+  position: relative;
+  height: 26rem;
+  width: 18rem;
+  background-color: #0097EE;
+  border-radius: 1rem;
+  margin: 1rem;
+  transition: 0.5s;
+}
+.projects-section .cards .card .card-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.projects-section .cards .card .card-project .loading {
+  -webkit-animation: is-rotating 1s infinite;
+          animation: is-rotating 1s infinite;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 6px solid white;
+  border-top-color: #57FFDC;
+}
+@-webkit-keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.projects-section .cards .card .back {
+  text-align: center;
+  padding: 0 2rem;
+}
+.projects-section .cards .card .back p {
+  padding: 3rem 0;
+}
+.projects-section .cards .card .front {
+  transition: 0.5s;
+  overflow-y: hidden;
+  border-radius: 10px;
+  transition: 1s;
+  background-color: #3C4042;
+}
+.projects-section .cards .card .front h2 {
+  padding: 1.5rem 0;
+}
+.projects-section .card:hover .front {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #3C4042;
+  border: 1px solid;
+  left: 40%;
+  transition: 0.5s;
+}
+.projects-section .card:hover .front h2 {
+  display: none;
+  overflow-y: hidden;
+}
+.projects-section .card:hover .front .loading {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.contacts-section h2 {
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contacts-section h3 {
+  font-size: 2rem;
+  font-family: "Roboto";
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-container {
+  max-width: 1200px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.contacts-info {
+  width: 50%;
+  padding-left: 8rem;
+}
+.contacts-info :nth-child(2) i {
+  color: #0097EE;
+}
+.contacts-info :nth-child(2) i:hover {
+  background-color: #0097EE;
+}
+.contacts-info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  float: left;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+.contacts-info i:hover {
+  background-color: #57FFDC;
+  color: #202124;
+}
+.contacts-info h5 {
+  font-size: 2rem;
+}
+.contacts-info p {
+  font-size: 0.9rem;
+}
+.contacts-info h5, .contacts-info p {
+  padding-left: 3rem;
+}
+
+.contacts-location, .contacts-mail, .contacts-call {
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 4rem;
+}
+.quote h5 {
+  font-family: "Space Grotesk";
+}
+
+.whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  right: 2%;
+  background-color: #3C4042;
+  bottom: 10rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s;
+}
+.whatsapp a:hover {
+  background-color: #00804B;
+}
+.whatsapp i:hover {
+  color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #171717;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+  box-shadow: 0rem 0rem 5rem 0rem black;
+}
+footer h2 {
+  font-family: "Roboto";
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media i {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .home-section h1 {
+    font-size: 3rem;
+  }
+  .home-section h2 {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .bottons {
+    flex-direction: column;
+  }
+  .contacts-container {
+    flex-direction: column;
+  }
+  .contacts-container h3 {
+    display: none;
+  }
+  .contacts-info {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .navsocial {
+    display: none;
+  }
+  #btn-mobile {
+    display: block;
+    padding: 0.6rem 1rem;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    right: 0rem;
+    background: #3C4042;
+    height: 0rem;
+    transition: 0.6s;
+    z-index: 200;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 4rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a, #menu li {
+    padding: 2rem 0;
+    margin: 0 2rem;
+    border-bottom: 1px solid rgba(180, 180, 180, 0.8078431373);
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
