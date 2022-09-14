@@ -1,8 +1,7 @@
-@font-face {
-    font-family: Quitars;
-    src: url(/fonts/Quitars.otf) format('opentype');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');

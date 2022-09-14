@@ -10,9 +10,9 @@
 body
     background-color: variables.$bg-color
     background: variables.$bg-gradient
-    background-size: 200% 200%
+    background-size: 300% 200%
     color: variables.$text-color
-    animation: colors 15s ease infinite
+    animation: colors 13s ease infinite
         
     @keyframes colors
         0% 
@@ -31,7 +31,7 @@ body
         list-style: none
 
     h2, h1
-        font-family: 'Quitars'
+        font-family: 'Oswald'
     p, a, h5
         font-family: 'Roboto'
 
@@ -39,7 +39,6 @@ i
     color: variables.$primary-color
 
 .header
-
     nav
         display: flex
         justify-content: space-between
@@ -51,14 +50,12 @@ i
         z-index: 100
         padding: 0 1.5rem
         box-shadow: 0rem 0rem 3rem 0rem black
-
     button //mobile
         display: none
-
     ul
         height: 100%
         @include mixins.flex-center
-        
+     
         li
             margin: 0 1rem
             text-transform: uppercase
@@ -78,9 +75,7 @@ i
 
     h1
         font-size: 6rem
-        font-family: 'Quitars'
         line-height: 1
-        letter-spacing: .5rem
 
     h2
         font-size: 1rem
@@ -96,22 +91,22 @@ i
     .skills
 
         .html:hover
-            font-size: 50px
+            transform: scale(1.25)
             color: #f06529
             transition: 0.5s
         
         .css:hover
-            font-size: 50px
+            transform: scale(1.25)
             color: #264de4
             transition: 0.5s
 
         .sass:hover
-            font-size: 50px
+            transform: scale(1.25)
             color: #CF649A
             transition: 0.5s
         
         .js:hover
-            font-size: 50px
+            transform: scale(1.25)
             color: #F0DB4F
             transition: 0.5s
 
@@ -339,7 +334,8 @@ i
     padding: 4rem
     
     h5
-        font-family: "Space Grotesk"
+        font-family: "poppins"
+        font-style: italic
 
 .whatsapp
     a

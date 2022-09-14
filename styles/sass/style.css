@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@font-face {
-  font-family: Quitars;
-  src: url(/fonts/Quitars.otf) format("opentype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,10 +11,10 @@
 body {
   background-color: #202124;
   background: linear-gradient(45deg, #171717, #083149, #202124, #202124);
-  background-size: 200% 200%;
+  background-size: 300% 200%;
   color: #FFFFFF;
-  -webkit-animation: colors 15s ease infinite;
-          animation: colors 15s ease infinite;
+  -webkit-animation: colors 13s ease infinite;
+          animation: colors 13s ease infinite;
 }
 @-webkit-keyframes colors {
   0% {
@@ -49,7 +47,7 @@ body ul {
   list-style: none;
 }
 body h2, body h1 {
-  font-family: "Quitars";
+  font-family: "Oswald";
 }
 body p, body a, body h5 {
   font-family: "Roboto";
@@ -105,9 +103,7 @@ i {
 }
 .home-section h1 {
   font-size: 6rem;
-  font-family: "Quitars";
   line-height: 1;
-  letter-spacing: 0.5rem;
 }
 .home-section h2 {
   font-size: 1rem;
@@ -121,22 +117,22 @@ i {
   padding: 2rem 0;
 }
 .home-section .skills .html:hover {
-  font-size: 50px;
+  transform: scale(1.25);
   color: #f06529;
   transition: 0.5s;
 }
 .home-section .skills .css:hover {
-  font-size: 50px;
+  transform: scale(1.25);
   color: #264de4;
   transition: 0.5s;
 }
 .home-section .skills .sass:hover {
-  font-size: 50px;
+  transform: scale(1.25);
   color: #CF649A;
   transition: 0.5s;
 }
 .home-section .skills .js:hover {
-  font-size: 50px;
+  transform: scale(1.25);
   color: #F0DB4F;
   transition: 0.5s;
 }
@@ -391,7 +387,8 @@ i {
   padding: 4rem;
 }
 .quote h5 {
-  font-family: "Space Grotesk";
+  font-family: "poppins";
+  font-style: italic;
 }
 
 .whatsapp a {
