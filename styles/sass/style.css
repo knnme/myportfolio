@@ -304,7 +304,9 @@ i {
 }
 .projects-section .cards .card .caeni p {
   padding: 2rem 0;
-  text-shadow: 0.1em 0em 0em black;
+}
+.projects-section .cards .card .caeni a, .projects-section .cards .card .caeni h2, .projects-section .cards .card .caeni p {
+  text-shadow: 0.1em 0.1em 0.1em black;
 }
 .projects-section .cards .card .back {
   text-align: center;
