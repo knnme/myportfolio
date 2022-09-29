@@ -136,6 +136,11 @@ i {
   color: #F0DB4F;
   transition: 0.5s;
 }
+.home-section .skills .angular:hover {
+  transform: scale(1.25);
+  color: #bd002e;
+  transition: 0.5s;
+}
 .home-section .bottons {
   display: flex;
   text-align: center;
@@ -237,6 +242,15 @@ i {
   text-transform: uppercase;
   text-align: center;
 }
+.projects-section i {
+  font-size: 2rem;
+}
+.projects-section img {
+  width: 2rem;
+}
+.projects-section h2 {
+  text-align: center;
+}
 .projects-section .cards {
   display: flex;
   flex-wrap: wrap;
@@ -280,6 +294,16 @@ i {
   to {
     transform: rotate(1turn);
   }
+}
+.projects-section .cards .card .caeni {
+  text-align: center;
+  padding: 0 1rem;
+  background-image: url();
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.projects-section .cards .card .caeni p {
+  padding: 2rem 0;
 }
 .projects-section .cards .card .back {
   text-align: center;
