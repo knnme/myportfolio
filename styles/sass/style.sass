@@ -88,7 +88,14 @@ i
         font-size: 2.5rem
         padding: 2rem 0
     
+    
     .skills
+        img
+            width: 2.5rem
+        img:hover
+            transform: scale(1.25)
+            color: #f06529
+            transition: 0.5s
 
         .html:hover
             transform: scale(1.25)
@@ -113,6 +120,10 @@ i
         .angular:hover
             transform: scale(1.25)
             color: #bd002e
+            transition: 0.5s
+        .react:hover
+            transform: scale(1.25)
+            color: #5ED3F3
             transition: 0.5s
 
             
@@ -237,6 +248,9 @@ i
                 width: 100%
                 height: 100%
 
+                .logo
+                    width: 150px
+
                 .loading 
                     animation: is-rotating 1s infinite
                     border-radius: 50%
@@ -259,6 +273,19 @@ i
                     
                 a, h2, p
                     text-shadow: 0.1em 0.1em 0.1em black
+            .spacey
+                text-align: center
+                padding: 0 1rem
+                background-image: url("/assets/image/img/spacey-card.jpg")
+                border-radius: 1rem
+                transition: .5s
+                
+                p
+                    padding: 2rem 0
+                    
+                a, h2, p
+                    text-shadow: 0.1em 0.1em 0.1em black
+                
 
 
             .back
@@ -294,6 +321,8 @@ i
     
         .loading
             animation: none
+        .logo
+            width: 50px
 
 .contacts-section
     h2

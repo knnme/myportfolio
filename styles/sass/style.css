@@ -116,6 +116,14 @@ i {
   font-size: 2.5rem;
   padding: 2rem 0;
 }
+.home-section .skills img {
+  width: 2.5rem;
+}
+.home-section .skills img:hover {
+  transform: scale(1.25);
+  color: #f06529;
+  transition: 0.5s;
+}
 .home-section .skills .html:hover {
   transform: scale(1.25);
   color: #f06529;
@@ -139,6 +147,11 @@ i {
 .home-section .skills .angular:hover {
   transform: scale(1.25);
   color: #bd002e;
+  transition: 0.5s;
+}
+.home-section .skills .react:hover {
+  transform: scale(1.25);
+  color: #5ED3F3;
   transition: 0.5s;
 }
 .home-section .bottons {
@@ -276,6 +289,9 @@ i {
   width: 100%;
   height: 100%;
 }
+.projects-section .cards .card .card-project .logo {
+  width: 150px;
+}
 .projects-section .cards .card .card-project .loading {
   -webkit-animation: is-rotating 1s infinite;
           animation: is-rotating 1s infinite;
@@ -306,6 +322,19 @@ i {
   padding: 2rem 0;
 }
 .projects-section .cards .card .caeni a, .projects-section .cards .card .caeni h2, .projects-section .cards .card .caeni p {
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+.projects-section .cards .card .spacey {
+  text-align: center;
+  padding: 0 1rem;
+  background-image: url("/assets/image/img/spacey-card.jpg");
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.projects-section .cards .card .spacey p {
+  padding: 2rem 0;
+}
+.projects-section .cards .card .spacey a, .projects-section .cards .card .spacey h2, .projects-section .cards .card .spacey p {
   text-shadow: 0.1em 0.1em 0.1em black;
 }
 .projects-section .cards .card .back {
@@ -341,6 +370,9 @@ i {
 .projects-section .card:hover .front .loading {
   -webkit-animation: none;
           animation: none;
+}
+.projects-section .card:hover .front .logo {
+  width: 50px;
 }
 
 .contacts-section h2 {
